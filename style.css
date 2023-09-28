@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #accdff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game {
+    background-color: #f4f0bd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #FFF;
+    text-shadow: 5px 4px 4px #CC7A05;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #043468;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+.moves,
+.timer {
+    font-size: 18px;
+    color: black;
+    margin: 5px;
+}
+
+.board-container {
+    margin-top: 20px;
+    position: relative;
+}
+/* #canvas{
+    background-color: #ffff;
+    border-radius: 30px;
+    margin: 30px 0;
+
+} */
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.board .card {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.board .card img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+.win {
+    font-size: 24px;
+    color: #4caf50;
+    display: none;
+    margin-top: 20px;
+}
